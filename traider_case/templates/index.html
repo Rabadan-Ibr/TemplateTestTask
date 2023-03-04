@@ -1,0 +1,14 @@
+{% load menu_tag %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu test</title>
+</head>
+<body>
+    Current URL: {{ text }}
+    <div>
+        {% draw_menu 'institution_menu' %}
+    </div>
+</body>
+</html>

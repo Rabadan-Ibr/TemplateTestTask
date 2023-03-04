@@ -1,0 +1,7 @@
+<ul>{{ parent }}
+{% if childes %}
+    {% for child in childes %}
+        <li>{{ child }}</li>
+    {% endfor %}
+{% endif %}
+</ul>
