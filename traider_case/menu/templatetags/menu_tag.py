@@ -61,7 +61,7 @@ def draw_menu(context, menu_title):
         temp_link = loader.get_template('link.html')
         return temp_link.render({'obj': head.menu})
 
-    # Составление дерева меню до подпункта с текущим url.
+    # Составление дерева меню от подпункта с текущим url, до вершины.
     current_menu = create_menu(current_obj, queryset)
     while current_obj['parent_id'] is not None:
         current_menu = create_menu(
